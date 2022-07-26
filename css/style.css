@@ -1,21 +1,27 @@
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     background-image: url(../images/pattern-background-desktop.svg);
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+    width: 100%;
 }
 main{
-    width: 320px;
-    margin: auto;
-    border: 2px;
-    border-radius: 10px;
+    width: 350px;
     background-color: white;
+    border-radius: 20px;
+    margin: 10% auto;
     
 }
 #image{
     width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-bottom: 20px;
 }
 #order{
     text-align: center;
@@ -51,8 +57,21 @@ p{
     border-radius: 10px;
     font-size: 16px;
 }
+.payment a{
+    text-decoration: none;
+    color: white;
+}
+#cancel{
+    color: black;
+}
+.payment a:hover{
+    opacity: 0.5;
+}
+a:hover{
+    opacity: 0.5;
+}
 #proceed{
-    background-color: hsl(245, 75%, 56%);
+    background-color: hsl(245, 75%, 52%);
     color: white;
 }
 #cancel{
@@ -61,4 +80,17 @@ p{
 .attribution{
     text-align: center;
     font-family: "Red Hat Display", sans-serif;
+}
+@media screen and (max-width:600px){
+    body{
+        background-image:url(../images/pattern-background-mobile.svg)
+    }
+    main{
+        margin: 25% auto;
+    }
+}
+@media screen and (max-width:350px) {
+    main{
+        width: 250px;
+    }
 }
