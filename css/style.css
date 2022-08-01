@@ -14,18 +14,27 @@ main{
     width: 350px;
     background-color: white;
     border-radius: 20px;
+    overflow: hidden;
     margin: 10% auto;
     
+}
+section{
+    padding: 10px;
 }
 #image{
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    overflow: hidden;
     padding-bottom: 20px;
 }
 #order{
     text-align: center;
     font-size: 16px;
+}
+#order h1{
+    padding-bottom: 15px;
+    font-weight: 5rem;
 }
 #plan{
     font-weight: bold;
@@ -83,7 +92,8 @@ a:hover{
 }
 @media screen and (max-width:600px){
     body{
-        background-image:url(../images/pattern-background-mobile.svg)
+        background-image:url(../images/pattern-background-mobile.svg);
+        background-size:cover;
     }
     main{
         margin: 25% auto;
